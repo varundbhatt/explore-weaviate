@@ -5,7 +5,7 @@ client = build_weaviate_client()
 
 def create_collection():
     try:
-        questions = client.collections.create(
+        client.collections.create(
             name="Jobs",
             vectorizer_config=wvc.config.Configure.Vectorizer.text2vec_google_aistudio(model_id="text-embedding-004"),    # Set the vectorizer to "text2vec-openai" to use the OpenAI API for vector-related operations
             properties=[
