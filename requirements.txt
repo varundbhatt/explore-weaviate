@@ -1,0 +1,8 @@
+weaviate
+fastapi
+uvicorn
+weaviate-client
+python-dotenv
+langgraph
+graph
+langchain
